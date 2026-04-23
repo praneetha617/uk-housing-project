@@ -1,0 +1,6 @@
+selected resource name:		pl_combine_housing_data
+selected resource type:		pipeline
+factory name:			adf-ukhousing-dev
+factory location:		uksouth
+subscription id:		0d3eb792-8cc8-4b14-9d47-65467129ca6d
+time of download (UTC):		Thu, 23 Apr 2026 11:14:28 GMT

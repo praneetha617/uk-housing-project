@@ -1,0 +1,249 @@
+{
+    "name": "ds_raw_housing",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_blob_ukhousing",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobStorageLocation",
+                "fileName": "ukhpi-east-midlands-from-2015-01-01-to-2026-01-01.csv",
+                "container": "raw"
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "Name",
+                "type": "String"
+            },
+            {
+                "name": "URI",
+                "type": "String"
+            },
+            {
+                "name": "Region GSS code",
+                "type": "String"
+            },
+            {
+                "name": "Period",
+                "type": "String"
+            },
+            {
+                "name": "Sales volume",
+                "type": "String"
+            },
+            {
+                "name": "Reporting period",
+                "type": "String"
+            },
+            {
+                "name": "Average price All property types",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) All property types",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) All property types",
+                "type": "String"
+            },
+            {
+                "name": "House price index All property types",
+                "type": "String"
+            },
+            {
+                "name": "Sales volume All property types",
+                "type": "String"
+            },
+            {
+                "name": "Average price Detached houses",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) Detached houses",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) Detached houses",
+                "type": "String"
+            },
+            {
+                "name": "House price index Detached houses",
+                "type": "String"
+            },
+            {
+                "name": "Average price Semi-detached houses",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) Semi-detached houses",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) Semi-detached houses",
+                "type": "String"
+            },
+            {
+                "name": "House price index Semi-detached houses",
+                "type": "String"
+            },
+            {
+                "name": "Average price Terraced houses",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) Terraced houses",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) Terraced houses",
+                "type": "String"
+            },
+            {
+                "name": "House price index Terraced houses",
+                "type": "String"
+            },
+            {
+                "name": "Average price Flats and maisonettes",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) Flats and maisonettes",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) Flats and maisonettes",
+                "type": "String"
+            },
+            {
+                "name": "House price index Flats and maisonettes",
+                "type": "String"
+            },
+            {
+                "name": "Average price First-time buyers",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) First-time buyers",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) First-time buyers",
+                "type": "String"
+            },
+            {
+                "name": "House price index First-time buyers",
+                "type": "String"
+            },
+            {
+                "name": "Average price Former owner-occupiers",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) Former owner-occupiers",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) Former owner-occupiers",
+                "type": "String"
+            },
+            {
+                "name": "House price index Former owner-occupiers",
+                "type": "String"
+            },
+            {
+                "name": "Average price Cash purchases",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) Cash purchases",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) Cash purchases",
+                "type": "String"
+            },
+            {
+                "name": "House price index Cash purchases",
+                "type": "String"
+            },
+            {
+                "name": "Sales volume Cash purchases",
+                "type": "String"
+            },
+            {
+                "name": "Average price Mortgage purchases",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) Mortgage purchases",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) Mortgage purchases",
+                "type": "String"
+            },
+            {
+                "name": "House price index Mortgage purchases",
+                "type": "String"
+            },
+            {
+                "name": "Sales volume Mortgage purchases",
+                "type": "String"
+            },
+            {
+                "name": "Average price New build",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) New build",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) New build",
+                "type": "String"
+            },
+            {
+                "name": "House price index New build",
+                "type": "String"
+            },
+            {
+                "name": "Sales volume New build",
+                "type": "String"
+            },
+            {
+                "name": "Average price Existing properties",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (yearly) Existing properties",
+                "type": "String"
+            },
+            {
+                "name": "Percentage change (monthly) Existing properties",
+                "type": "String"
+            },
+            {
+                "name": "House price index Existing properties",
+                "type": "String"
+            },
+            {
+                "name": "Sales volume Existing properties",
+                "type": "String"
+            },
+            {
+                "name": "Pivotable date",
+                "type": "String"
+            }
+        ]
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
