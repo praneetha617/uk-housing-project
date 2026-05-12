@@ -52,11 +52,4 @@ This repository currently includes:
 - star schema notebook
 - curated housing dataset
 
-## Next Steps
 
-Planned additions:
-
-- Power BI dashboard screenshots
-- architecture diagram
-- pipeline execution screenshots
-- project documentation with workflow explanation
