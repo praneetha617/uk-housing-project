@@ -12,44 +12,26 @@ The project was developed to build a simple end-to-end housing data workflow:
 - modelling for analytics
 - dashboard reporting in Power BI
 
-## Repository Structure
-
-- `data/` - curated dataset, Azure Data Factory assets, cleaned data, and star schema files, scripts or notebook-based processing logic
-- `docs/` - project documentation
-- `screenshots/` - screenshots for Azure, pipeline runs, and dashboards
-
 ## Azure Data Factory Pipeline
 
 The Azure Data Factory pipeline was created to move housing data from the raw layer into the processed layer.
 
-Pipeline name:
-`pl_combine_housing_data`
+## Future Development: AI Listing Freshness Flow
 
-Main activity:
-`copy_raw_to_processed`
+A future extension of this project is to add an AI-supported property listing freshness workflow. While the current project focuses on regional UK housing price trends and Azure-based data engineering, the next phase could connect market insights with listing-level quality checks.
 
-Datasets used:
+The proposed AI flow would focus on detecting outdated or reused property images in rental or sales listings. For example, when a property price is updated, the system could require the seller or landlord to upload new images. The uploaded images could then be checked using image hashing or computer vision techniques to identify whether the same old images are being reused.
 
-- `ds_raw_housing`
-- `ds_processed_housing`
+Proposed future workflow:
 
-## Curated Dataset
+1. A listing owner updates the property price or listing details.
+2. The platform checks the last image upload date.
+3. If the images are older than the latest price update, new images are required.
+4. The new images are compared against previous uploads.
+5. If duplicate or reused images are detected, the listing update is blocked or flagged for review.
+6. Verified listings are marked as recently updated.
 
-The repository includes a curated master dataset:
+Potential technologies for this future extension include Python, OpenCV, perceptual image hashing, Azure Blob Storage, Azure Functions, Azure AI Vision, and a lightweight web application interface.
 
-`data/uk_housing_master_dataset_curated.csv`
-
-This dataset is used as the final prepared dataset for downstream analysis and reporting.
-
-## Data Engineering Components
-
-This repository currently includes:
-
-- Azure Data Factory pipeline JSON files
-- linked service configuration
-- dataset definitions
-- cleaned data notebook
-- star schema notebook
-- curated housing dataset
-
+This future development would extend the project from regional housing analytics into a practical data-quality solution for housing platforms, helping improve listing transparency and user trust.
 
