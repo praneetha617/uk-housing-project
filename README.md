@@ -7,7 +7,7 @@ Python | Azure Data Factory | ADLS Gen2 | Azure Databricks | Delta Lake | Power 
 
 ## Project Architecture
 
-![UK Housing Project Architecture](Architecture/uk-housing-architecture.png)
+![UK Housing Project Architecture](Architecture/UK%20Housing%20project%20Architecture.png)
 
 ## Pipeline
 Raw Housing Data → Azure Data Factory → ADLS Gen2 → Databricks/Python → Delta Tables → Star Schema → Power BI
