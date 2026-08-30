@@ -1,6 +1,6 @@
 # UK Housing Analytics Pipeline
 
-End-to-end Azure data engineering and analytics project analysing UK housing price trends across nine regions from 2015–2026.
+End-to-end Azure data engineering and analytics project analysing UK housing price trends across nine regions from 2015 - 2026.
 
 ## Tech Stack
 Python | Azure Data Factory | ADLS Gen2 | Azure Databricks | Delta Lake | Power BI | DAX
