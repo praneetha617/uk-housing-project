@@ -5,6 +5,10 @@ End-to-end Azure data engineering and analytics project analysing UK housing pri
 ## Tech Stack
 Python | Azure Data Factory | ADLS Gen2 | Azure Databricks | Delta Lake | Power BI | DAX
 
+## Project Architecture
+
+![UK Housing Project Architecture](Architecture/uk-housing-architecture.png)
+
 ## Pipeline
 Raw Housing Data → Azure Data Factory → ADLS Gen2 → Databricks/Python → Delta Tables → Star Schema → Power BI
 
